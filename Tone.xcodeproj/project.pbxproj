@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		EF80A8591B55A824000B7EB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A8581B55A824000B7EB6 /* main.m */; };
 		EF80A85C1B55A824000B7EB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A85B1B55A824000B7EB6 /* AppDelegate.m */; };
-		EF80A85F1B55A824000B7EB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A85E1B55A824000B7EB6 /* ViewController.m */; };
+		EF80A85F1B55A824000B7EB6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A85E1B55A824000B7EB6 /* HomeViewController.m */; };
 		EF80A8621B55A824000B7EB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF80A8601B55A824000B7EB6 /* Main.storyboard */; };
 		EF80A8641B55A824000B7EB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF80A8631B55A824000B7EB6 /* Images.xcassets */; };
 		EF80A8671B55A824000B7EB6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF80A8651B55A824000B7EB6 /* LaunchScreen.xib */; };
 		EF80A8731B55A824000B7EB6 /* ToneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A8721B55A824000B7EB6 /* ToneTests.m */; };
+		EF80A87E1B55B69D000B7EB6 /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A87D1B55B69D000B7EB6 /* WorkoutViewController.m */; };
+		EF80A8831B55B6CE000B7EB6 /* PlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A8821B55B6CE000B7EB6 /* PlaylistViewController.m */; };
+		EF80A8861B55B6DC000B7EB6 /* PlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A8851B55B6DC000B7EB6 /* PlaylistDetailViewController.m */; };
+		EF80A8891B55B6EA000B7EB6 /* SoundBitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A8881B55B6EA000B7EB6 /* SoundBitViewController.m */; };
+		EF80A88D1B55B752000B7EB6 /* OrganizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A88C1B55B752000B7EB6 /* OrganizeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +37,24 @@
 		EF80A8581B55A824000B7EB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EF80A85A1B55A824000B7EB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF80A85B1B55A824000B7EB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EF80A85D1B55A824000B7EB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EF80A85E1B55A824000B7EB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF80A85D1B55A824000B7EB6 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EF80A85E1B55A824000B7EB6 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		EF80A8611B55A824000B7EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF80A8631B55A824000B7EB6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EF80A8661B55A824000B7EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EF80A86C1B55A824000B7EB6 /* ToneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF80A8711B55A824000B7EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF80A8721B55A824000B7EB6 /* ToneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToneTests.m; sourceTree = "<group>"; };
+		EF80A87C1B55B69D000B7EB6 /* WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutViewController.h; sourceTree = "<group>"; };
+		EF80A87D1B55B69D000B7EB6 /* WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutViewController.m; sourceTree = "<group>"; };
+		EF80A8811B55B6CE000B7EB6 /* PlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistViewController.h; sourceTree = "<group>"; };
+		EF80A8821B55B6CE000B7EB6 /* PlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistViewController.m; sourceTree = "<group>"; };
+		EF80A8841B55B6DC000B7EB6 /* PlaylistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDetailViewController.h; sourceTree = "<group>"; };
+		EF80A8851B55B6DC000B7EB6 /* PlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDetailViewController.m; sourceTree = "<group>"; };
+		EF80A8871B55B6EA000B7EB6 /* SoundBitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundBitViewController.h; sourceTree = "<group>"; };
+		EF80A8881B55B6EA000B7EB6 /* SoundBitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundBitViewController.m; sourceTree = "<group>"; };
+		EF80A88B1B55B752000B7EB6 /* OrganizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeViewController.h; sourceTree = "<group>"; };
+		EF80A88C1B55B752000B7EB6 /* OrganizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +96,11 @@
 		EF80A8551B55A824000B7EB6 /* Tone */ = {
 			isa = PBXGroup;
 			children = (
+				EF80A88A1B55B6FE000B7EB6 /* Main Navigation */,
+				EF80A8801B55B6B4000B7EB6 /* Sound Bits */,
+				EF80A87F1B55B6A7000B7EB6 /* Playlists */,
 				EF80A85A1B55A824000B7EB6 /* AppDelegate.h */,
 				EF80A85B1B55A824000B7EB6 /* AppDelegate.m */,
-				EF80A85D1B55A824000B7EB6 /* ViewController.h */,
-				EF80A85E1B55A824000B7EB6 /* ViewController.m */,
 				EF80A8601B55A824000B7EB6 /* Main.storyboard */,
 				EF80A8631B55A824000B7EB6 /* Images.xcassets */,
 				EF80A8651B55A824000B7EB6 /* LaunchScreen.xib */,
@@ -117,6 +133,39 @@
 				EF80A8711B55A824000B7EB6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF80A87F1B55B6A7000B7EB6 /* Playlists */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A8811B55B6CE000B7EB6 /* PlaylistViewController.h */,
+				EF80A8821B55B6CE000B7EB6 /* PlaylistViewController.m */,
+				EF80A8841B55B6DC000B7EB6 /* PlaylistDetailViewController.h */,
+				EF80A8851B55B6DC000B7EB6 /* PlaylistDetailViewController.m */,
+			);
+			name = Playlists;
+			sourceTree = "<group>";
+		};
+		EF80A8801B55B6B4000B7EB6 /* Sound Bits */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A8871B55B6EA000B7EB6 /* SoundBitViewController.h */,
+				EF80A8881B55B6EA000B7EB6 /* SoundBitViewController.m */,
+			);
+			name = "Sound Bits";
+			sourceTree = "<group>";
+		};
+		EF80A88A1B55B6FE000B7EB6 /* Main Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A85D1B55A824000B7EB6 /* HomeViewController.h */,
+				EF80A85E1B55A824000B7EB6 /* HomeViewController.m */,
+				EF80A87C1B55B69D000B7EB6 /* WorkoutViewController.h */,
+				EF80A87D1B55B69D000B7EB6 /* WorkoutViewController.m */,
+				EF80A88B1B55B752000B7EB6 /* OrganizeViewController.h */,
+				EF80A88C1B55B752000B7EB6 /* OrganizeViewController.m */,
+			);
+			name = "Main Navigation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF80A85F1B55A824000B7EB6 /* ViewController.m in Sources */,
+				EF80A87E1B55B69D000B7EB6 /* WorkoutViewController.m in Sources */,
+				EF80A88D1B55B752000B7EB6 /* OrganizeViewController.m in Sources */,
+				EF80A85F1B55A824000B7EB6 /* HomeViewController.m in Sources */,
 				EF80A85C1B55A824000B7EB6 /* AppDelegate.m in Sources */,
+				EF80A8831B55B6CE000B7EB6 /* PlaylistViewController.m in Sources */,
 				EF80A8591B55A824000B7EB6 /* main.m in Sources */,
+				EF80A8861B55B6DC000B7EB6 /* PlaylistDetailViewController.m in Sources */,
+				EF80A8891B55B6EA000B7EB6 /* SoundBitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +472,7 @@
 				EF80A8781B55A824000B7EB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF80A8791B55A824000B7EB6 /* Build configuration list for PBXNativeTarget "ToneTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +481,7 @@
 				EF80A87B1B55A824000B7EB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
