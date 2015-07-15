@@ -15,7 +15,38 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="FinalRep" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9Q-cD-DBA">
+                                <rect key="frame" x="265" y="124" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1O-94-eEi">
+                                <rect key="frame" x="283" y="240" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZMZ-WX-s9j" kind="show" id="z68-Ud-D0d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQ9-av-kIc">
+                                <rect key="frame" x="272" y="373" width="57" height="30"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vA8-HE-uD6" kind="show" id="tbk-mZ-4Fq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="b1O-94-eEi" secondAttribute="centerX" id="FDx-wn-Ecv"/>
+                            <constraint firstAttribute="centerX" secondItem="O9Q-cD-DBA" secondAttribute="centerX" id="ZxM-AL-uUo"/>
+                            <constraint firstAttribute="centerX" secondItem="kQ9-av-kIc" secondAttribute="centerX" id="aOK-jO-BlU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="C6z-Iy-on1"/>
                     <connections>
@@ -26,6 +57,40 @@
             </objects>
             <point key="canvasLocation" x="324" y="351"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="QO5-I5-R3G">
+            <objects>
+                <viewController id="vA8-HE-uD6" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="maW-2b-S6x"/>
+                        <viewControllerLayoutGuide type="bottom" id="690-oy-VUn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4kW-ch-2QN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Soundbit Volume" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRZ-n2-ppy">
+                                <rect key="frame" x="84" y="184" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dqB-PY-q5i">
+                                <rect key="frame" x="322" y="180" width="151" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fRZ-n2-ppy" secondAttribute="centerX" constant="150" id="F4I-o7-ZFx"/>
+                            <constraint firstAttribute="centerX" secondItem="dqB-PY-q5i" secondAttribute="centerX" constant="-129" id="rDb-cu-l8f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="E97-Fj-Rlg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9NH-hA-7Pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="1195"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Te0-tx-CZd">
             <objects>
@@ -35,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="n5H-1M-ilL"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jtw-BX-DP1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUU-Bv-S3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -53,7 +118,31 @@
                     <view key="view" contentMode="scaleToFill" id="4a7-WJ-0Xo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Select Device" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zia-86-yEj">
+                                <rect key="frame" x="248" y="99" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Select Position" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftw-hG-e97">
+                                <rect key="frame" x="243" y="317" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HiU-hK-OSl">
+                                <rect key="frame" x="98" y="128" width="404" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="HiU-hK-OSl" secondAttribute="centerX" id="3Na-2h-gck"/>
+                            <constraint firstAttribute="centerX" secondItem="ftw-hG-e97" secondAttribute="centerX" constant="-0.5" id="NeG-3E-Gkh"/>
+                            <constraint firstAttribute="centerX" secondItem="HiU-hK-OSl" secondAttribute="centerX" id="k4D-7N-XOl"/>
+                            <constraint firstAttribute="centerX" secondItem="zia-86-yEj" secondAttribute="centerX" constant="-0.5" id="yRe-a1-J6s"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="5b3-Ut-RLg" kind="show" identifier="toPlaylist" id="tuy-Ea-hMk"/>
@@ -164,4 +253,7 @@
             <point key="canvasLocation" x="2732" y="1250"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="z68-Ud-D0d"/>
+    </inferredMetricsTieBreakers>
 </document>

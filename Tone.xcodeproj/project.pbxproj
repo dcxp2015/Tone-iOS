@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A63AFBCC1B57003700C88A9E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63AFBCB1B57003700C88A9E /* SettingsViewController.m */; };
 		EF80A8591B55A824000B7EB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A8581B55A824000B7EB6 /* main.m */; };
 		EF80A85C1B55A824000B7EB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A85B1B55A824000B7EB6 /* AppDelegate.m */; };
 		EF80A85F1B55A824000B7EB6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A85E1B55A824000B7EB6 /* HomeViewController.m */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A63AFBCB1B57003700C88A9E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		A63AFBCD1B57007E00C88A9E /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
 		EF80A8531B55A824000B7EB6 /* Tone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF80A8571B55A824000B7EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF80A8581B55A824000B7EB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				EF80A87D1B55B69D000B7EB6 /* WorkoutViewController.m */,
 				EF80A88B1B55B752000B7EB6 /* OrganizeViewController.h */,
 				EF80A88C1B55B752000B7EB6 /* OrganizeViewController.m */,
+				A63AFBCD1B57007E00C88A9E /* SettingsViewController.h */,
+				A63AFBCB1B57003700C88A9E /* SettingsViewController.m */,
 			);
 			name = "Main Navigation";
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				TargetAttributes = {
 					EF80A8521B55A824000B7EB6 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2CPB37FRWS;
 					};
 					EF80A86B1B55A824000B7EB6 = {
 						CreatedOnToolsVersion = 6.4;
@@ -271,6 +277,7 @@
 				EF80A87E1B55B69D000B7EB6 /* WorkoutViewController.m in Sources */,
 				EF80A88D1B55B752000B7EB6 /* OrganizeViewController.m in Sources */,
 				EF80A85F1B55A824000B7EB6 /* HomeViewController.m in Sources */,
+				A63AFBCC1B57003700C88A9E /* SettingsViewController.m in Sources */,
 				EF80A85C1B55A824000B7EB6 /* AppDelegate.m in Sources */,
 				EF80A8831B55B6CE000B7EB6 /* PlaylistViewController.m in Sources */,
 				EF80A8591B55A824000B7EB6 /* main.m in Sources */,
@@ -403,7 +410,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Tone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,7 +422,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Tone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

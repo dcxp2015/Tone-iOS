@@ -1,22 +1,23 @@
 //
-//  OrganizeViewController.m
+//  SettingsViewController.m
 //  Tone
 //
-//  Created by Danny Flax on 7/14/15.
+//  Created by Rahul Sundararaman on 7/15/15.
 //  Copyright (c) 2015 Danny Flax. All rights reserved.
 //
 
-#import "OrganizeViewController.h"
+#import "SettingsViewController.h"
 
-@interface OrganizeViewController ()
+@interface SettingsViewController ()
 
 @end
 
-@implementation OrganizeViewController
+@implementation SettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
