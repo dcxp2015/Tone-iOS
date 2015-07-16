@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PlaylistDetailViewController : UIViewController
-
+    @property (nonatomic,retain) NSString *selectedRow;
 @end

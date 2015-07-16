@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A63AFBCC1B57003700C88A9E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63AFBCB1B57003700C88A9E /* SettingsViewController.m */; };
+		A63AFBCF1B580A2100C88A9E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63AFBCE1B580A2100C88A9E /* AVFoundation.framework */; };
+		A63AFBD11B5811B100C88A9E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63AFBD01B5811B100C88A9E /* CoreData.framework */; };
+		A63AFBD41B58125A00C88A9E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A63AFBD21B58125A00C88A9E /* Model.xcdatamodeld */; };
 		EF80A8591B55A824000B7EB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A8581B55A824000B7EB6 /* main.m */; };
 		EF80A85C1B55A824000B7EB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A85B1B55A824000B7EB6 /* AppDelegate.m */; };
 		EF80A85F1B55A824000B7EB6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A85E1B55A824000B7EB6 /* HomeViewController.m */; };
@@ -35,6 +38,9 @@
 /* Begin PBXFileReference section */
 		A63AFBCB1B57003700C88A9E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		A63AFBCD1B57007E00C88A9E /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
+		A63AFBCE1B580A2100C88A9E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A63AFBD01B5811B100C88A9E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A63AFBD31B58125A00C88A9E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		EF80A8531B55A824000B7EB6 /* Tone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF80A8571B55A824000B7EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF80A8581B55A824000B7EB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63AFBD11B5811B100C88A9E /* CoreData.framework in Frameworks */,
+				A63AFBCF1B580A2100C88A9E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,9 @@
 		EF80A84A1B55A824000B7EB6 = {
 			isa = PBXGroup;
 			children = (
+				A63AFBD21B58125A00C88A9E /* Model.xcdatamodeld */,
+				A63AFBD01B5811B100C88A9E /* CoreData.framework */,
+				A63AFBCE1B580A2100C88A9E /* AVFoundation.framework */,
 				EF80A8551B55A824000B7EB6 /* Tone */,
 				EF80A86F1B55A824000B7EB6 /* ToneTests */,
 				EF80A8541B55A824000B7EB6 /* Products */,
@@ -281,6 +292,7 @@
 				EF80A85C1B55A824000B7EB6 /* AppDelegate.m in Sources */,
 				EF80A8831B55B6CE000B7EB6 /* PlaylistViewController.m in Sources */,
 				EF80A8591B55A824000B7EB6 /* main.m in Sources */,
+				A63AFBD41B58125A00C88A9E /* Model.xcdatamodeld in Sources */,
 				EF80A8861B55B6DC000B7EB6 /* PlaylistDetailViewController.m in Sources */,
 				EF80A8891B55B6EA000B7EB6 /* SoundBitViewController.m in Sources */,
 			);
@@ -495,6 +507,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A63AFBD21B58125A00C88A9E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A63AFBD31B58125A00C88A9E /* Model.xcdatamodel */,
+			);
+			currentVersion = A63AFBD31B58125A00C88A9E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EF80A84B1B55A824000B7EB6 /* Project object */;
 }
