@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SoundBitViewController : UIViewController
+#import <AVFoundation/AVFoundation.h>
+#import </usr/include/sqlite3.h>
+@interface SoundBitViewController : UIViewController <AVAudioRecorderDelegate,AVAudioPlayerDelegate, UIAlertViewDelegate>
+{
+    UILabel *status;
+    NSData *file1Data;
+    NSString *filePath;
+    NSString *databasePath;
+    sqlite3 *contactDB;
+}
+@property (strong, nonatomic) IBOutlet UIButton *recordPauseButton;
+@property (strong, nonatomic) IBOutlet UIButton *stopButton;
+@property (strong, nonatomic) IBOutlet UIButton *playButton;
+@property (strong, nonatomic) IBOutlet UIButton *useButton;
+- (IBAction)recordPauseTapped:(id)sender;
+- (IBAction)stopTapped:(id)sender;
+- (IBAction)playTapped:(id)sender;
+- (IBAction)useTapped:(id)sender;
 
 @end

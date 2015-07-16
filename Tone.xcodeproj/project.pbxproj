@@ -11,6 +11,7 @@
 		A63AFBCF1B580A2100C88A9E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63AFBCE1B580A2100C88A9E /* AVFoundation.framework */; };
 		A63AFBD11B5811B100C88A9E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63AFBD01B5811B100C88A9E /* CoreData.framework */; };
 		A63AFBD41B58125A00C88A9E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A63AFBD21B58125A00C88A9E /* Model.xcdatamodeld */; };
+		A63AFBD61B58443500C88A9E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A63AFBD51B58443500C88A9E /* libsqlite3.dylib */; };
 		EF80A8591B55A824000B7EB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A8581B55A824000B7EB6 /* main.m */; };
 		EF80A85C1B55A824000B7EB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A85B1B55A824000B7EB6 /* AppDelegate.m */; };
 		EF80A85F1B55A824000B7EB6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF80A85E1B55A824000B7EB6 /* HomeViewController.m */; };
@@ -41,6 +42,7 @@
 		A63AFBCE1B580A2100C88A9E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A63AFBD01B5811B100C88A9E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A63AFBD31B58125A00C88A9E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A63AFBD51B58443500C88A9E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EF80A8531B55A824000B7EB6 /* Tone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF80A8571B55A824000B7EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF80A8581B55A824000B7EB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63AFBD61B58443500C88A9E /* libsqlite3.dylib in Frameworks */,
 				A63AFBD11B5811B100C88A9E /* CoreData.framework in Frameworks */,
 				A63AFBCF1B580A2100C88A9E /* AVFoundation.framework in Frameworks */,
 			);
@@ -89,6 +92,7 @@
 		EF80A84A1B55A824000B7EB6 = {
 			isa = PBXGroup;
 			children = (
+				A63AFBD51B58443500C88A9E /* libsqlite3.dylib */,
 				A63AFBD21B58125A00C88A9E /* Model.xcdatamodeld */,
 				A63AFBD01B5811B100C88A9E /* CoreData.framework */,
 				A63AFBCE1B580A2100C88A9E /* AVFoundation.framework */,

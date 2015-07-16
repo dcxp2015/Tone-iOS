@@ -7,9 +7,9 @@
 //
 
 #import "PlaylistDetailViewController.h"
+#import "SoundBitViewController.h"
 
 @interface PlaylistDetailViewController ()
-@property (strong, nonatomic) IBOutlet UILabel *lbl;
 
 @end
 
@@ -18,11 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _lbl.text = selectedRow;
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"+" style:UIBarButtonItemStylePlain target:self action:@selector(refreshPropertyList:)];
+    self.navigationItem.rightBarButtonItem = anotherButton;
+    //[anotherButton release];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(IBAction)refreshPropertyList:(id)sender{
+    SoundBitViewController *_view = [self.storyboard instantiateViewControllerWithIdentifier:@"soundBit"];
+   // _view.selectedRow = [tableData objectAtIndex: indexPath.row];
+    [self.navigationController pushViewController:_view animated:YES];
+    NSLog(@"asdfas");
 }
 @end
