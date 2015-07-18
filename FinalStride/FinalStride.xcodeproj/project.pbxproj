@@ -23,6 +23,9 @@
 		A6B711C41B5AB5C900BF145B /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B711C31B5AB5C900BF145B /* library.png */; };
 		A6B711C61B5AB5F700BF145B /* playlist.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B711C51B5AB5F700BF145B /* playlist.png */; };
 		A6B711C81B5AB61500BF145B /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B711C71B5AB61500BF145B /* settings.png */; };
+		A6B711CB1B5AFAED00BF145B /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B711CA1B5AFAED00BF145B /* LibraryViewController.m */; };
+		A6B711CE1B5AFB0500BF145B /* PlaylistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B711CD1B5AFB0500BF145B /* PlaylistsViewController.m */; };
+		A6B711D11B5AFB1C00BF145B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B711D01B5AFB1C00BF145B /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,12 @@
 		A6B711C31B5AB5C900BF145B /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
 		A6B711C51B5AB5F700BF145B /* playlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playlist.png; sourceTree = "<group>"; };
 		A6B711C71B5AB61500BF145B /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		A6B711C91B5AFAED00BF145B /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
+		A6B711CA1B5AFAED00BF145B /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
+		A6B711CC1B5AFB0500BF145B /* PlaylistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistsViewController.h; sourceTree = "<group>"; };
+		A6B711CD1B5AFB0500BF145B /* PlaylistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistsViewController.m; sourceTree = "<group>"; };
+		A6B711CF1B5AFB1C00BF145B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		A6B711D01B5AFB1C00BF145B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +125,12 @@
 				A6B711BA1B5A376F00BF145B /* SidebarViewController.m */,
 				A6B711BC1B5A388A00BF145B /* MainViewController.h */,
 				A6B711BD1B5A388A00BF145B /* MainViewController.m */,
+				A6B711C91B5AFAED00BF145B /* LibraryViewController.h */,
+				A6B711CA1B5AFAED00BF145B /* LibraryViewController.m */,
+				A6B711CC1B5AFB0500BF145B /* PlaylistsViewController.h */,
+				A6B711CD1B5AFB0500BF145B /* PlaylistsViewController.m */,
+				A6B711CF1B5AFB1C00BF145B /* SettingsViewController.h */,
+				A6B711D01B5AFB1C00BF145B /* SettingsViewController.m */,
 				A672819D1B59A55400520873 /* Images.xcassets */,
 				A672819F1B59A55400520873 /* LaunchScreen.xib */,
 				A67281941B59A55400520873 /* FinalStride.xcdatamodeld */,
@@ -256,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B711CE1B5AFB0500BF145B /* PlaylistsViewController.m in Sources */,
 				A67281931B59A55400520873 /* AppDelegate.m in Sources */,
+				A6B711CB1B5AFAED00BF145B /* LibraryViewController.m in Sources */,
+				A6B711D11B5AFB1C00BF145B /* SettingsViewController.m in Sources */,
 				A6B711BE1B5A388A00BF145B /* MainViewController.m in Sources */,
 				A67281961B59A55400520873 /* FinalStride.xcdatamodeld in Sources */,
 				A6B711B81B5A2A3000BF145B /* SWRevealViewController.m in Sources */,

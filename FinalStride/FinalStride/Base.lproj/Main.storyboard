@@ -26,6 +26,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Gcc-4T-HjL"/>
                     <connections>
                         <segue destination="D0W-l5-eIr" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="shi-mT-X51"/>
                         <segue destination="wn0-3O-rUL" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="Sm2-Ei-sOf"/>
@@ -33,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08I-eT-NEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-250" y="190"/>
+            <point key="canvasLocation" x="-606" y="122"/>
         </scene>
         <!--Sidebar View Controller-->
         <scene sceneID="LmK-vO-PrQ">
@@ -82,6 +83,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="D0W-l5-eIr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Yvo-8V-hK0"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="library" id="Mdh-hs-XzH">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -100,6 +104,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="G3a-iQ-eAT" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="CKR-Ma-Kpw"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlists" id="EpL-FM-4cP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -118,6 +125,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ekN-BY-SJN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="fFB-v2-euc"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settings" id="A75-xI-Rys">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -136,6 +146,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="9PW-Nx-Jq7" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="4Tw-c3-ffF"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="name" id="aNt-i2-OB5">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -166,6 +179,111 @@
             </objects>
             <point key="canvasLocation" x="466" y="-206"/>
         </scene>
+        <!--Playlists View Controller-->
+        <scene sceneID="kqc-2g-iBF">
+            <objects>
+                <viewController storyboardIdentifier="pvc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ekN-BY-SJN" customClass="PlaylistsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ctP-4m-wTR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yt9-FO-2lO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ro5-HO-QST">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bdw-o2-KIQ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Playlists" id="B7O-w4-JhL">
+                                        <barButtonItem key="leftBarButtonItem" image="men.png" id="nv5-CF-7vj"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bdw-o2-KIQ" firstAttribute="leading" secondItem="Ro5-HO-QST" secondAttribute="leadingMargin" constant="-16" id="EUq-HW-bfE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bdw-o2-KIQ" secondAttribute="trailing" constant="-16" id="zLA-Gc-DhB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sideBarButton" destination="nv5-CF-7vj" id="Jaq-OB-igr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7h6-5P-G1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-1369"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="cIq-Fr-rdG">
+            <objects>
+                <viewController id="9PW-Nx-Jq7" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xry-Oq-0lH"/>
+                        <viewControllerLayoutGuide type="bottom" id="BSv-Dd-kgx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oix-sI-XoH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D31-n2-2ux">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Settings" id="skB-6b-lnC">
+                                        <barButtonItem key="leftBarButtonItem" image="men.png" id="Byx-WR-Tr5"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D31-n2-2ux" firstAttribute="leading" secondItem="Oix-sI-XoH" secondAttribute="leadingMargin" constant="-16" id="W0h-Lj-Aj5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D31-n2-2ux" secondAttribute="trailing" constant="-16" id="egQ-fd-RA2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sideBarButton" destination="Byx-WR-Tr5" id="Kfe-uN-vIY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abn-Mb-WG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-615"/>
+        </scene>
+        <!--Library View Controller-->
+        <scene sceneID="fXr-iy-1Hl">
+            <objects>
+                <viewController storyboardIdentifier="lvc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G3a-iQ-eAT" customClass="LibraryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wHN-Ot-QYh"/>
+                        <viewControllerLayoutGuide type="bottom" id="tfu-VV-rAV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="40T-jL-NCC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbS-3r-H4V">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Library" id="Wjn-fJ-kyg">
+                                        <barButtonItem key="leftBarButtonItem" image="men.png" id="al1-cg-x4r"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TbS-3r-H4V" secondAttribute="trailing" constant="-16" id="X8d-UU-sly"/>
+                            <constraint firstItem="TbS-3r-H4V" firstAttribute="leading" secondItem="40T-jL-NCC" secondAttribute="leadingMargin" constant="-16" id="lxS-4e-jhJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sideBarButton" destination="al1-cg-x4r" id="iMv-0d-Qyo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nz-3m-Uud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-2085"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rVI-lm-elY">
             <objects>
@@ -180,7 +298,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28l-W8-QGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="432" y="594"/>
+            <point key="canvasLocation" x="466" y="638"/>
         </scene>
         <!--Home-->
         <scene sceneID="fXY-RZ-Opn">
@@ -235,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFI-he-ZhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1232" y="600"/>
+            <point key="canvasLocation" x="1466" y="638"/>
         </scene>
     </scenes>
     <resources>
@@ -246,4 +364,7 @@
         <image name="playlist.png" width="128" height="116"/>
         <image name="settings.png" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yvo-8V-hK0"/>
+    </inferredMetricsTieBreakers>
 </document>
