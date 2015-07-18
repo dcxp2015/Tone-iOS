@@ -11,5 +11,7 @@
 
 @interface MainViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *sideBarButton;
+@property (nonatomic, retain) IBOutlet UIPickerView *pickerView;
+
 
 @end

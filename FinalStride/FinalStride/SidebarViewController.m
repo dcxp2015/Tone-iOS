@@ -10,6 +10,7 @@
 
 @interface SidebarViewController ()
 
+//@property (strong, nonatomic) IBOutlet UIImageView *profileimg;
 @property (nonatomic, strong) NSArray *menuItems;
 @end
 
@@ -27,7 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    _menuItems = @[@"title", @"home", @"library", @"playlists", @"settings", @"name"];
+   // _profileimg.layer.cornerRadius = 25;
+   // _profileimg.layer.masksToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,13 +49,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    
     // Return the number of rows in the section.
-    return 0;
+    //return 0;
+     return _menuItems.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    NSString *CellIdentifier = [_menuItems objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     return cell;

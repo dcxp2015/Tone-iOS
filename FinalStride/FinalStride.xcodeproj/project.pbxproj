@@ -18,6 +18,11 @@
 		A6B711B81B5A2A3000BF145B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B711B71B5A2A3000BF145B /* SWRevealViewController.m */; };
 		A6B711BB1B5A376F00BF145B /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B711BA1B5A376F00BF145B /* SidebarViewController.m */; };
 		A6B711BE1B5A388A00BF145B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B711BD1B5A388A00BF145B /* MainViewController.m */; };
+		A6B711C01B5AB3D600BF145B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B711BF1B5AB3D600BF145B /* icon.png */; };
+		A6B711C21B5AB52100BF145B /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B711C11B5AB52100BF145B /* home.png */; };
+		A6B711C41B5AB5C900BF145B /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B711C31B5AB5C900BF145B /* library.png */; };
+		A6B711C61B5AB5F700BF145B /* playlist.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B711C51B5AB5F700BF145B /* playlist.png */; };
+		A6B711C81B5AB61500BF145B /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B711C71B5AB61500BF145B /* settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		A6B711BA1B5A376F00BF145B /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
 		A6B711BC1B5A388A00BF145B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		A6B711BD1B5A388A00BF145B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A6B711BF1B5AB3D600BF145B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		A6B711C11B5AB52100BF145B /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		A6B711C31B5AB5C900BF145B /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
+		A6B711C51B5AB5F700BF145B /* playlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playlist.png; sourceTree = "<group>"; };
+		A6B711C71B5AB61500BF145B /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,11 @@
 			children = (
 				A6B711B61B5A2A3000BF145B /* SWRevealViewController.h */,
 				A6B711B71B5A2A3000BF145B /* SWRevealViewController.m */,
+				A6B711C51B5AB5F700BF145B /* playlist.png */,
+				A6B711C71B5AB61500BF145B /* settings.png */,
+				A6B711C11B5AB52100BF145B /* home.png */,
+				A6B711C31B5AB5C900BF145B /* library.png */,
+				A6B711BF1B5AB3D600BF145B /* icon.png */,
 				A6B711B41B5A29E600BF145B /* men.png */,
 				A67281911B59A55400520873 /* AppDelegate.h */,
 				A67281921B59A55400520873 /* AppDelegate.m */,
@@ -215,10 +230,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B711C61B5AB5F700BF145B /* playlist.png in Resources */,
 				A672819C1B59A55400520873 /* Main.storyboard in Resources */,
+				A6B711C81B5AB61500BF145B /* settings.png in Resources */,
+				A6B711C01B5AB3D600BF145B /* icon.png in Resources */,
 				A67281A11B59A55400520873 /* LaunchScreen.xib in Resources */,
 				A6B711B51B5A29E600BF145B /* men.png in Resources */,
 				A672819E1B59A55400520873 /* Images.xcassets in Resources */,
+				A6B711C21B5AB52100BF145B /* home.png in Resources */,
+				A6B711C41B5AB5C900BF145B /* library.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
