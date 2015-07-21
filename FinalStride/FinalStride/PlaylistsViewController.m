@@ -13,7 +13,7 @@
 @interface PlaylistsViewController ()<UITableViewDataSource, UITableViewDelegate>
 //@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-
+//@synthesize tableView
 @end
 @implementation PlaylistsViewController
 NSMutableArray *tableData;
@@ -25,8 +25,8 @@ NSMutableArray *tableData;
     //[testObject saveInBackground];
     NSMutableArray *songids = [NSMutableArray arrayWithObjects:@"", nil];
     NSMutableDictionary *playlists=[[NSMutableDictionary alloc] init];
-    [playlists setObject:@"" forKey:@"playlistname"];
-    [playlists setObject:songids forKey:@"songarray"];
+    //[playlists setObject:@"" forKey:@"playlistname"];
+    //[playlists setObject:songids forKey:@"songarray"];
     NSLog(@"%@", playlists);
    // NSLog(@"->%@",playlists);
     NSData *data = [NSJSONSerialization dataWithJSONObject:playlists
@@ -61,12 +61,15 @@ NSMutableArray *tableData;
             else if(c1 == 20){
                 [playlists setObject:@"Workout" forKey:@"playlistname2"];
                 [playlists setObject:songids forKey: @"songarray2"];
+                
                 //NSLog(@"at 20");
                 //NSLog(@"%@", songids);
                 
             }
             else if(c1 == [users count]){
                 NSLog(@"%@", playlists);
+                tableData = [NSMutableArray arrayWithObjects:playlists[@"playlistname1"], playlists[@"playlistname2"], nil];
+                [self.tableView reloadData];
             }
            // NSLog(object[@"Title"]);
         }
@@ -93,7 +96,6 @@ NSMutableArray *tableData;
 
     [super viewDidLoad];
     //self.title = @"Home";
-    tableData = [NSMutableArray arrayWithObjects:@"Playlist 1", @"Playlist 2", nil];
     
     //[self.view addSubview: self.label];
     
@@ -122,6 +124,7 @@ NSMutableArray *tableData;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
    // NSLog(@"Got down here");
+    NSLog([NSString stringWithFormat:@"%lu", (unsigned long)[tableData count]]);
     return [tableData count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
