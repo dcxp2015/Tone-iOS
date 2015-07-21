@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Rahul Sundararaman. All rights reserved.
 //
 #import "AppDelegate.h"
-
+#import <Parse/Parse.h>
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -25,6 +25,15 @@
                                                            shadow, NSShadowAttributeName,
                                                            [UIFont fontWithName:@"Helvetica-Light" size:21.0], NSFontAttributeName, nil]];
     
+    
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"kJawWr0883JUddCTgipaPphexvb3tPUY3Cq9E5uE"
+                  clientKey:@"cQCuAIKEwrYWmu4wvdYjwbbMFnBruLSupV7GQnh6"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
 

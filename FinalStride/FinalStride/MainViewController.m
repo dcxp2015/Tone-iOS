@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 #import "SWRevealViewController.h"
-
+#import <Parse/Parse.h>
 @interface MainViewController ()
 //@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
 
@@ -17,6 +17,25 @@
 NSArray *pickerData;
 - (void)viewDidLoad
 {
+    /*NSMutableDictionary *songs = [[NSMutableDictionary alloc] init];
+    [songs setObject:@"0" forKey:@"id"];
+    [songs setObject:@" " forKey:@"songname"];
+    [songs setObject:@" " forKey:@"artist"];
+    
+    NSMutableDictionary *playlists = [[NSMutableDictionary alloc] init];
+    [playlists setObject:@"0" forKey:@"id"];
+    [playlists setObject: @" " forKey:@"playlistname"];
+    [playlists setObject: songs forKey:@"song"];*/
+    //PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    //testObject[@"foo"] = @"bar";
+    //[testObject saveInBackground];
+    //NSDictionary *songs = @{@"songname":@" ", @"artist":@" ", @"pathtofile":@" "};
+    
+
+   // NSLog(jsonStr);
+   // NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //[defaults setObject:jsonStr forKey:@"data"];
+    //[defaults synchronize];
     [super viewDidLoad];
     //self.title = @"Home";
     pickerData = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
@@ -27,7 +46,6 @@ NSArray *pickerData;
         [self.sideBarButton setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
-    
 }
 - (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
