@@ -10,6 +10,8 @@
 #import "SWRevealViewController.h"
 #import "PlaylistModel.h"
 #import <Parse/Parse.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 @interface PlaylistsViewController ()<UITableViewDataSource, UITableViewDelegate>
 //@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -68,11 +70,36 @@ NSMutableArray *tableData;
             }
             else if(c1 == [users count]){
                 NSLog(@"%@", playlists);
+                for(int x = 0; x<[playlists count]/2; x++){
+                    NSLog(@"dfjsa");
+                }
                 tableData = [NSMutableArray arrayWithObjects:playlists[@"playlistname1"], playlists[@"playlistname2"], nil];
                 [self.tableView reloadData];
             }
            // NSLog(object[@"Title"]);
         }
+        PFQuery *query = [PFQuery queryWithClassName:@"Phrases"];
+        [query selectKeys:@[@"Audio"]];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            // iterate through the objects array, which contains PFObjects for each Student
+            for(int k = 0; k<[objects count]; k++){
+                //NSData *urlData = objects[k][@"Audio"];
+                [objects[k][@"Audio"] getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+                    if (!error) {
+                       // NSLog(@"bytes in hex: %@", [data description]);
+                        // image can now be set on a UIImageView
+                        
+                    }
+                }];                //NSString *soundFilePath = [NSString stringWithFormat:@"%@/filename.mp3",
+                //                           [[NSBundle mainBundle] resourcePath]];
+                //NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+                //AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
+                //                                                               error:nil];
+                //player.numberOfLoops = -1; //Infinite
+                
+                //[player play];
+            }
+        }];
        // NSLog([NSString stringWithFormat:@"%lu", (unsigned long)[users count]]);
        // NSLog(@"%@",songids);
         //NSDictionary *myjson = [defaults objectForKey:@"data"];
@@ -113,13 +140,6 @@ NSMutableArray *tableData;
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
     
-}
-- (void)fetchJokes {
-    NSURL* jokesUrl = [NSURL URLWithString:@"https://s3.amazonaws.com/com.tuts.mobile/playlists.json"];
-    
-    [[[NSURLSession sharedSession] dataTaskWithURL:jokesUrl completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        tableData = [PlaylistModel arrayOfModelsFromData:data error:nil];
-    }] resume];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
